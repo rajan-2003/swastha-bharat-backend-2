@@ -1,0 +1,6 @@
+/node_modules/
+.env
+
+# Ignore a specific file
+config/push-notification-key.json
+
