@@ -1,10 +1,9 @@
 const Notification = require("../models/notification");
 const addNotificationJob = require("../scheduler.js");
 const admin = require("firebase-admin");
-const serviceAccount = require("../config/push-notification-key.json");
+const serviceAccount = require("../config/push-notification-key.js");
 const { error } = require("console");
-// const db = require('./firebaseAdmin');
-// const fire_db = require("../config/fire_db.js");
+
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
